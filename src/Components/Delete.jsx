@@ -16,7 +16,7 @@ export const Delete = () => {
                             <input type="text" className="form-control" />
                         </div>
                         <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-12">
-                            <button className="btn-btn-dark">Delete</button>
+                            <button className="btn btn-success">Delete</button>
                         </div>
                     </div>
                 </div>
