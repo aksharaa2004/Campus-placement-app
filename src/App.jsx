@@ -6,6 +6,7 @@ import './App.css'
 import AddReg from './Components/AddReg'
 import Search from './Components/Search'
 import { Delete } from './Components/Delete'
+import View from './Components/View'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,6 +16,7 @@ function App() {
      <AddReg/>
      <Search/>
      <Delete/>
+     <View/>
     </>
   )
 }
