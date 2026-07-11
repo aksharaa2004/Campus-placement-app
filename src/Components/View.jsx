@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import NavBar from './NavBar'
 
 const View = () => {
     const [data,changedata]=useState([])
@@ -17,10 +18,13 @@ const View = () => {
     )
   return (
     <div>
-        <div className="container">
-            <div className="row">
-                <div className="col-col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <div className="row">
+        <NavBar/>
+        <div className="container mt-5">
+    <div className="row justify-content-center">
+      <div className="col-12 col-md-10 col-lg-8">
+        <div className="card shadow p-4">
+          <h2 className="text-center text-success mb-4">View</h2>
+                    <div className="row g-3">
                         {data.map(
                             (value,index)=>
                             {
@@ -50,6 +54,7 @@ const View = () => {
                 </div>
             </div>
         </div>    
+    </div>
     </div>
   )
 }
