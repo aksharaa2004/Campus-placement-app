@@ -19,7 +19,7 @@ const View = () => {
   return (
     <div>
         <NavBar/>
-        <div className="container mt-5">
+        <div className="card h-100 shadow-sm">
     <div className="row justify-content-center">
       <div className="col-12 col-md-10 col-lg-8">
         <div className="card shadow p-4">
