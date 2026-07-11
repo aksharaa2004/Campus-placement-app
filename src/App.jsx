@@ -7,16 +7,21 @@ import AddReg from './Components/AddReg'
 import Search from './Components/Search'
 import { Delete } from './Components/Delete'
 import View from './Components/View'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-     <AddReg/>
-     <Search/>
-     <Delete/>
-     <View/>
+     <BrowserRouter>
+     <Routes>
+      <Route path='/' element={<AddReg/>}/>\
+      <Route path='/Search' element={<Search/>}/>
+      <Route path='/Delete' element={<Delete/>}/>
+      <Route path='/View' element={<View/>}/>
+     </Routes>
+     </BrowserRouter>
     </>
   )
 }
